@@ -22,4 +22,5 @@ def jprint(obj):
     print(text)
 
 with open('datas.txt', 'w') as outfile:
-    json.dump(dataset, outfile)
+    text = json.dumps(dataset, sort_keys=True, indent=4)
+    outfile.write(text)
