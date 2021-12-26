@@ -2,7 +2,7 @@ import requests
 import json
 from datetime import datetime
 
-# pull request from cdc website 
+# pull request from cdc website  
 dataset = requests.get("https://data.cdc.gov/resource/9mfq-cb36.json")
 print(dataset.status_code)
 dataset = dataset.json()
